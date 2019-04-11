@@ -47,19 +47,7 @@ dt,
 dd,
 ol,
 ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td {
+li {
     margin: 0;
     padding: 0;
     border: 0;
@@ -172,6 +160,15 @@ strong {
     background-repeat: repeat;
     background-image: url("../../img/dots.svg")
 }
+
+
+.dots.alt_background {
+  background-image : url("../../img/dots2.svg");
+}
+
+.clicked {background: url("../../img/dots2.svg");}
+
+.reclicked {background: url("../../img/dots.svg");}
 
 .intro {
     overflow: auto;
