@@ -1,0 +1,66 @@
+FOR ADDING JQUERY TO A WEBSITE, UNDER SCRIPTS SECTION:
+<script type=”text/javascript” src=https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js></script>
+
+
+.underline2 {
+border-bottom: 3px solid #eee;
+}
+
+
+colors: #ffffff, #eeeeee, #111111, #e8e3cf
+
+$(document).ready(function() {
+  $("#button").click(function() {
+    var src = $('#myimage').attr('src');
+
+    //if the current image is picture1.png, change it to picture2.png
+    if(src == 'http://www.libpng.org/pub/png/PngSuite/f01n2c08.png') {
+        $("#myimage").attr("src","http://www.libpng.org/pub/png/PngSuite/f02n2c08.png");
+
+    //if the current image is picture2.png, change it to picture3.png
+    } else if(src == "http://www.libpng.org/pub/png/PngSuite/f02n2c08.png") {
+        $("#myimage").attr("src","http://www.libpng.org/pub/png/PngSuite/f03n2c08.png");
+    //if the current image is anything else, change it back to picture1.png
+    } else {
+        $("#myimage").attr("src","http://www.libpng.org/pub/png/PngSuite/f01n2c08.png");
+    }
+    console.log("Src is: " + $("#myimage").attr("src"));
+  })
+});
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<button id="button" >Cycle</button>
+<img src="http://www.libpng.org/pub/png/PngSuite/f01n2c08.png" id="myimage"/>
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~
+jquery
+$(document).ready(function () {
+
+    function slider(){
+        $('#cover').delay(3000).fadeOut(1000, function() {
+            $('#cover').css("background-image", "url('images/classes-cover.jpg')");
+            $('#cover').fadeIn(1000, function() {
+                $('#cover').delay(3000).fadeOut(1000, function() {
+                    $('#cover').css("background-image", "url('images/contact_banner.png')");
+                    $('#cover').fadeIn(1000, slider);
+                });
+            });
+        });
+
+    }
+    slider();
+});
+
+html
+<div id="cover"></div>
+
+
+css
+#cover{
+    background:red;
+    width:100px;
+    height:100px;
+}
