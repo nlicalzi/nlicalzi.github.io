@@ -1,8 +1,8 @@
 body {
     background-color: #484349;
     color: #f6edd6;
-    font-size: 52px;
-    line-height: 62px;
+    font-size: 22px;
+    line-height: 42px;
 }
 
 a {
@@ -11,5 +11,6 @@ a {
 }
 
 .main {
-    margin: 40px;
+    margin: 20%;
+
 }
