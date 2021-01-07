@@ -1,0 +1,15 @@
+body {
+    background-color: #484349;
+    color: #f6edd6;
+    font-size: 52px;
+    line-height: 62px;
+}
+
+a {
+    color: #EE6352;
+    text-decoration: none;
+}
+
+.main {
+    margin: 40px;
+}
